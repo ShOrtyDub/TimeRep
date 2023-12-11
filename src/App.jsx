@@ -11,7 +11,7 @@ function App() {
     const [rep, setRep] = useState(0);
     const minutes = Math.floor(countDown / 60);
     const seconds = countDown % 60;
-    const [audio, setAudio] = useState(new Audio('./public/beep.mp3'));
+    const [audio, setAudio] = useState(new Audio('https://shortydub.github.io/TimeRep/public/beep.mp3'));
 
     const handleClickDown = () => {
         if (rep > 0) {
@@ -35,7 +35,7 @@ function App() {
 
             if (countDown > 0) {
                 if (countDown >= 1 && countDown <= 6) {
-                    const newAudio = new Audio('./public/beep.mp3');
+                    const newAudio = new Audio('https://shortydub.github.io/TimeRep/public/beep.mp3');
                     newAudio.play()
                         .then(evt => setCountDown(countDownCopy - 1))
                         .catch(error => console.error("le son n'est pas joué"));
