@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+}
+
+#title, #repCount, #copyright {
+    font-family: 'Indie Flower', cursive;
+}
+
+#title, #repCount, #countDown, #copyright, h3 {
+    color: white;
+}
+
+#title {
+    font-size: 70px;
+}
+
+#countDown {
+    font-size: xxx-large;
+}
+
+h3, #repCount {
+    font-size: xx-large;
+}
+
+#copyright {
+    font-size: large;
+}
