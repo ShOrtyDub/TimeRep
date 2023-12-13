@@ -33,7 +33,6 @@ function App() {
     useEffect(() => {
         const interval = setInterval(() => {
             let countDownCopy = countDown;
-            // let repCopy = rep;
 
             if (countDown > 0) {
                 if (countDown >= 1 && countDown <= 5) {
@@ -45,7 +44,6 @@ function App() {
                 }
                 setCountDown(countDownCopy - 1);
             } else {
-                // setRep(rep === 0 ? 0 : repCopy - 1);
                 clearInterval(interval);
             }
         }, 1000);
