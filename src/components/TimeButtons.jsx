@@ -8,6 +8,7 @@ export default function TimeButtons({handleTimeValue}) {
     return (<div className="container text-center">
         <div>
             <button
+                type="button"
                 className="btn btn-outline-warning btn-lg mx-3 my-2"
                 onClick={(event) => {
                     handleTimeValue(event)
@@ -15,6 +16,7 @@ export default function TimeButtons({handleTimeValue}) {
                 value={25}>00:25
             </button>
             <button
+                type="button"
                 className="btn btn-outline-warning btn-lg mx-3 my-2"
                 onClick={(event) => {
                     handleTimeValue(event)
@@ -24,6 +26,7 @@ export default function TimeButtons({handleTimeValue}) {
         </div>
         <div>
             <button
+                type="button"
                 className="btn btn-outline-warning btn-lg mx-3 my-2"
                 onClick={(event) => {
                     handleTimeValue(event)
@@ -31,6 +34,7 @@ export default function TimeButtons({handleTimeValue}) {
                 value={60}>01:00
             </button>
             <button
+                type="button"
                 className="btn btn-outline-warning btn-lg mx-3 my-2"
                 onClick={(event) => {
                     handleTimeValue(event)
@@ -40,6 +44,7 @@ export default function TimeButtons({handleTimeValue}) {
         </div>
         <div>
             <button
+                type="button"
                 className="btn btn-outline-warning btn-lg mx-3 my-2"
                 onClick={(event) => {
                     handleTimeValue(event)
@@ -47,6 +52,7 @@ export default function TimeButtons({handleTimeValue}) {
                 value={120}>02:00
             </button>
             <button
+                type="button"
                 className="btn btn-outline-warning btn-lg mx-3 my-2"
                 onClick={(event) => {
                     handleTimeValue(event)

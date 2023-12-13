@@ -26,24 +26,26 @@ function App() {
     const handleTimeValue = (event) => {
         let newCountDown = event.target.value;
         setCountDown(newCountDown);
+        let repCopy = rep;
+        setRep(rep === 0 ? 0 : repCopy - 1);
     };
 
     useEffect(() => {
         const interval = setInterval(() => {
             let countDownCopy = countDown;
-            let repCopy = rep;
+            // let repCopy = rep;
 
             if (countDown > 0) {
-                if (countDown >= 1 && countDown <= 6) {
+                if (countDown >= 1 && countDown <= 5) {
                     const newAudio = new Audio('beep.mp3');
                     newAudio.play()
-                        .then(evt => setCountDown(countDownCopy - 1))
-                        .catch(error => console.error("le son n'est pas joué"));
+                        .then(() => setCountDown(countDownCopy - 1))
+                        .catch(() => console.error("le son n'est pas joué"));
                     setAudio(newAudio);
                 }
                 setCountDown(countDownCopy - 1);
             } else {
-                setRep(rep === 0 ? 0 : repCopy - 1);
+                // setRep(rep === 0 ? 0 : repCopy - 1);
                 clearInterval(interval);
             }
         }, 1000);
@@ -56,7 +58,7 @@ function App() {
     }, [countDown, audio]);
 
     return (<div className="container-fluid">
-        <h1 id="title" className="container text-center my-4">Time' Rep</h1>
+        <h1 id="title" className="container text-center mt-5 mb-4">Time' Rep</h1>
         <CountDown minutes={minutes} seconds={seconds}/>
         <RepButton repCount={rep} handlePlus={handleClickUp} handleLess={handleClickDown}/>
         <TimeButtons handleTimeValue={handleTimeValue}/>
