@@ -9,7 +9,7 @@ export default function RepButton({repCount, handlePlus, handleLess}) {
 
     return (<div className="container text-center mb-3">
         <h3>{repCount}</h3>
-        <p id="repCount"> {repCount > 1 ? 'reps' : 'rep'} to left</p>
+        <p id="repCount"> {repCount > 1 ? 'reps' : 'rep'} to do</p>
         <div>
             <button
                 className="btn btn-success mx-3 my-3"
