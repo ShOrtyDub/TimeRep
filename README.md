@@ -1,12 +1,7 @@
-# React + Vite
+Time Rep est une application de minuterie spécialement conçue pour les séances d'entraînement sportif.
+Suivez vos nombres de répétitions et vos temps de repos, créez des séquences personnalisées et optimisez votre performance.
+Avec une interface conviviale et des fonctionnalités intuitives, Time Rep rend votre entraînement plus efficace que jamais.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-
+Réalisée avec React.
 
 ![time rep](https://github.com/ShOrtyDub/TimeRep/assets/125014203/101b68e9-cfd7-4ec7-b8ba-bd3586bf8d4d)
