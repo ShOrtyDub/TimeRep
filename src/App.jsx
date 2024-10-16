@@ -5,6 +5,7 @@ import {useEffect, useState} from "react";
 import RepButton from "./components/RepButton.jsx";
 import CountDown from "./components/CountDown.jsx";
 import TimeButtons from "./components/TimeButtons.jsx";
+import PauseButtons from "./components/PauseButtons.jsx";
 
 function App() {
     const [countDown, setCountDown] = useState(0);
@@ -28,6 +29,11 @@ function App() {
         setCountDown(newCountDown);
         let repCopy = rep;
         setRep(rep === 0 ? 0 : repCopy - 1);
+    };
+
+    // Fonction pour gérer le temps de pause choisi
+    const handlePauseTime = (pauseTime) => {
+        setCountDown(pauseTime);  // Met à jour le temps de pause
     };
 
     useEffect(() => {
@@ -60,6 +66,7 @@ function App() {
         <CountDown minutes={minutes} seconds={seconds}/>
         <RepButton repCount={rep} handlePlus={handleClickUp} handleLess={handleClickDown}/>
         <TimeButtons handleTimeValue={handleTimeValue}/>
+        <PauseButtons handlePauseTime={handlePauseTime}/>
         <div id="copyright" className="container text-center mt-5">
             Copyright © propriété de Mathieu RAKOTOARITSIMA 08 dec 2023
         </div>
