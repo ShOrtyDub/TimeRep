@@ -68,7 +68,7 @@ function App() {
         <TimeButtons handleTimeValue={handleTimeValue}/>
         <PauseButtons handlePauseTime={handlePauseTime}/>
         <div id="copyright" className="container text-center mt-5">
-            Copyright © propriété de Mathieu RAKOTOARITSIMA 08 dec 2023
+            Copyright © TimeRep' v0.2 propriété de Mathieu RAKOTOARITSIMA 08 dec 2023
         </div>
     </div>);
 }
